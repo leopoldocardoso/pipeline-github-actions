@@ -21,7 +21,7 @@ jobs:
       - name: checkout #faz o download dos arquivos do respositorio para pipeline
         uses: actions/checkout@v2
       - name: Terraform Init
-        run: terraform init
+        run: terraform init -reconfigure
       - name: Terraform Validate
         run: terraform validate
       - name: Terraform Plan
