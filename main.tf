@@ -4,10 +4,6 @@ terraform {
       source  = "hashicorp/aws"
       version = "4.12.1"
     }
-    azure = {
-      source = "hashicorp/azurerm"
-      version = "=3.66.0"
-    }
   }
 }
 provider "aws" {
