@@ -1,10 +1,10 @@
-resource "aws_key_pair" "key" {
-  key_name   = "aws-key"
-  public_key = var.aws_pub_key
-  tags = {
-    key = "ec2"
-  }
-}
+# resource "aws_key_pair" "key" {
+#   key_name   = "aws-key"
+#   public_key = var.aws_pub_key
+#   tags = {
+#     key = "ec2"
+#   }
+# }
 
 resource "aws_instance" "ec2_terraform" {
   ami                         = "ami-053b0d53c279acc90" # us-east-1
