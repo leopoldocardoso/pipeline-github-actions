@@ -1,0 +1,10 @@
+.terraform/
+*.backup
+*.hcl
+*tfvars
+*.tfstate
+*.out
+azure-key.pem
+aws-key.pem
+azure-key.pub
+aws-key.pub
