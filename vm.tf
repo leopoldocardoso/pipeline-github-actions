@@ -27,10 +27,10 @@ resource "azurerm_linux_virtual_machine" "vm" {
   admin_username        = "terraform"
   network_interface_ids = [azurerm_network_interface.nic.id]
 
-  # admin_ssh_key {
-  #   username   = "terraform"
-  #   public_key = var.azure_pub_key
-  # }
+  admin_ssh_key {
+    username   = "terraform"
+    public_key = var.azure_pub_key
+  }
 
   os_disk {
     caching              = "ReadWrite"
